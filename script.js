@@ -33,10 +33,11 @@ function btnEncriptar(){
 // `La letra "a" es convertida para "ai"`
 // `La letra "o" es convertida para "ober"`
 // `La letra "u" es convertida para "ufat"`
+// `La letra "d" es convertida para "idid"`
 
 
 function encriptar(stringEncriptada){
-    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"] , ["d", "idi"]];
     stringEncriptada = stringEncriptada.toLowerCase()
 
     for(let i = 0; i < matrizCodigo.length; i++){
@@ -60,7 +61,7 @@ function btnDesencriptar(){
 
 
 function desencriptar(stringDesencriptada){
-    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"], ["d", "idi"]];
     stringDesencriptada = stringDesencriptada.toLowerCase()
 
     for(let i = 0; i < matrizCodigo.length; i++){
@@ -71,6 +72,8 @@ function desencriptar(stringDesencriptada){
 
     }
     return stringDesencriptada
+
+
 }
 
 
