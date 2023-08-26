@@ -6,28 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
 <body>
     <header class="Nav">
-       <img class="logo" src="imagenes/Mi proyecto.png" alt="logo de alura" >
+       <nav>
+        <img class="logo" src="imagenes/Incognito_logo.png" alt="logo de proyecto" >
         <p>Encriptador</p>
+       </nav>
+       
     </header>
     <main>
         <section>
-            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="area-texto">
+                <textarea class="text-area" cols="30" rows="10" placeholder="  Ingrese el texto aqui"></textarea>
+                <textarea class="mensaje" cols="20" rows="10"></textarea>
             <div>
                 <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botones">
+            
+            
                 <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
                 <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </section>
         <section>
-            <textarea class="mensaje" cols="20" rows="10"></textarea>
+            
             <div>
                 <button class="copiar" onclick="copiar()">Copiar</button>
             </div>
@@ -36,4 +46,7 @@
 <script src="script.js"></script>
 
 </body>
+<footer>
+    <p class="copy">©MDG - 2023</p>
+</footer>
 </html>
